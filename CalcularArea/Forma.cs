@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace CalcularArea
 {
-    internal class Forma
+    public class Forma
     {
+        public string Nombre { get; set; }
+
+        public virtual double CalcularArea()
+        {
+            return 0.0;
+        }
     }
 }
